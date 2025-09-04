@@ -97,7 +97,7 @@ pip install -r requirements.txt
 ```
 
 **Option B – python.org installer (recommended for macOS):**
-- Download and install Python 3.12 (or 3.11) from [python.org/downloads](https://www.python.org/downloads/).  
+- Download and install Python 3.12 (or 3.11) 
 - Recreate the virtual environment with that interpreter:
   ```bash
   rm -rf venv
