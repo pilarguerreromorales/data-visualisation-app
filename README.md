@@ -108,9 +108,3 @@ The full dependency list is included in `requirements.txt`.
 
 ---
 
-## Authors
-
-- Pilar Guerrero  
-- Emilia Granja  
-- Alexía Chacón  
-- Tessa Correig
