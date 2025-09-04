@@ -21,6 +21,7 @@ Check the report for more in detial explanation.
 data-visualisation-app/
 │
 ├── program.py                # Main application code
+├── main.py                   # main function
 ├── requirements.txt          # Python dependencies
 ├── demographics.xlsx         # Dataset on demographic indicators
 ├── humancapital.xlsx         # Dataset on human capital indicators
