@@ -65,6 +65,13 @@ Run the main program with:
 python main.py
 ```
 
+This will open a graphical interface window where you can:
+
+- Click **START** to begin  
+- Select either **Regional plots** or **Country-specific population growth**  
+- Navigate through menus to generate visualisations of your choice  
+- Go back to the main menu or quit at any time
+
 ---
 
 ## macOS users – Tkinter issue
@@ -103,14 +110,6 @@ Check Tkinter is available:
 ```bash
 python -c "import tkinter as tk; print('Tk OK, version', tk.TkVersion)"
 ```
-
-
-This will open a graphical interface window where you can:
-
-- Click **START** to begin  
-- Select either **Regional plots** or **Country-specific population growth**  
-- Navigate through menus to generate visualisations of your choice  
-- Go back to the main menu or quit at any time
 
 ---
 
