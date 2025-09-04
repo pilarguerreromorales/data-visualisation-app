@@ -60,9 +60,50 @@ data-visualisation-app/
 ## Usage
 
 Run the main program with:
+
 ```bash
-python program.py
+python main.py
 ```
+
+---
+
+## macOS users – Tkinter issue
+
+This app uses `graphics.py`, which depends on **Tkinter**.  
+If you see an error like:
+
+```
+ModuleNotFoundError: No module named '_tkinter'
+```
+
+your Python installation doesn’t include Tk.
+
+### Fix options:
+
+**Option A – Homebrew Python 3.12 with Tk:**
+```bash
+brew install python@3.12 python-tk@3.12
+rm -rf venv
+"$(brew --prefix python@3.12)"/bin/python3.12 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+**Option B – python.org installer (recommended for macOS):**
+- Download and install Python 3.12 (or 3.11) from [python.org/downloads](https://www.python.org/downloads/).  
+- Recreate the virtual environment with that interpreter:
+  ```bash
+  rm -rf venv
+  /Library/Frameworks/Python.framework/Versions/3.12/bin/python3 -m venv venv
+  source venv/bin/activate
+  pip install -r requirements.txt
+  ```
+
+Check Tkinter is available:
+```bash
+python -c "import tkinter as tk; print('Tk OK, version', tk.TkVersion)"
+```
+
 
 This will open a graphical interface window where you can:
 
